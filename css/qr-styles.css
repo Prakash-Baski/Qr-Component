@@ -1,0 +1,73 @@
+:root {
+    --clr-bg: hsl(212, 45%, 89%);
+    --clr-fg-200: hsl(220, 15%, 55%) ;
+    --clr-fg-800: hsl(218, 44%, 22%);
+
+    --clr-neutral-100: hsl(0, 0%, 100%);
+
+    --ff: "Outfit";
+}
+
+/* reset */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.8rem;
+}
+
+/* Utility Class*/
+
+.flow-content > * + * {
+    margin-top: 1rem;
+}
+
+/* General Styling */
+
+body {
+    font-family: var(--ff);
+    font-size: 1rem;
+}
+
+/* General Layout */
+
+main {
+    background: var(--clr-bg);
+}
+.container {
+    width: 20rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 7.5rem 0;
+}
+
+.card {
+    background: var(--clr-neutral-100);
+    border-radius: 0.8rem;
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+/* Typo Styling */
+
+h2 {
+    color: var(--clr-fg-800);
+}
+
+p {
+    color: var(--clr-fg-200);
+    font-size: 0.98rem;
+}
